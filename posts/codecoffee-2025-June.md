@@ -8,7 +8,7 @@ Group: Code & Coffee
 Tags: Tech, Free
 Price: FREE
 Location: Capital One Cafe (Short Pump)
-RSVP: https://www.meetup.com/rva-code-coffee/events/306777970
+RSVP: https://www.meetup.com/rva-code-coffee/events/306777970?action=rsvp
 ---
 
 ## WHY GO

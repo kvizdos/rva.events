@@ -8,7 +8,7 @@ Group: Cyber Security User Group
 Tags: Tech, Free, Networking
 Price: FREE
 Location: Tech For Troops
-RSVP: https://www.meetup.com/rva-cybersecurity/events/307243423
+RSVP: https://www.meetup.com/rva-cybersecurity/events/307243423?action=rsvp
 ---
 
 ## WHY GO

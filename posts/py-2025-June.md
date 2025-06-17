@@ -8,7 +8,7 @@ Group: Python User Group
 Tags: Tech, Free
 Price: FREE
 Location: Ippon Technologies
-RSVP: https://www.meetup.com/pyrvausergroup/events/305378032/
+RSVP: https://www.meetup.com/pyrvausergroup/events/305378032/?action=rsvp
 ---
 
 ## WHY GO

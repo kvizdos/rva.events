@@ -8,7 +8,7 @@ Group: Java User Group
 Tags: Tech, Free
 Price: FREE
 Location: Ippon Technologies
-RSVP: https://www.meetup.com/richmond-java-users-group/events/307601386
+RSVP: https://www.meetup.com/richmond-java-users-group/events/307601386?action=rsvp
 ---
 
 ## WHY GO

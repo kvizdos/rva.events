@@ -8,7 +8,7 @@ Group: Software Development User Group
 Tags: Tech, Free
 Price: FREE
 Location: VACO Technology
-RSVP: https://www.meetup.com/rva-software-development-user-group/events/307766914
+RSVP: https://www.meetup.com/rva-software-development-user-group/events/307766914?action=rsvp
 ---
 
 ## WHY GO

@@ -8,7 +8,7 @@ Group: RVASEC
 Tags: Tech, Free, Cyber Security, Networking
 Price: FREE
 Location: Somewhere in Short Pump
-RSVP: https://www.meetup.com/rvasec/events/305126457
+RSVP: https://www.meetup.com/rvasec/events/305126457?action=rsvp
 ---
 
 ## WHY GO
