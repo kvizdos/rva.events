@@ -5,10 +5,14 @@
 
         <link rel="stylesheet" href="/assets/style.css" />
         <link rel="stylesheet" href="/assets/post.css" />
+        <link rel="manifest" href="/manifest.webmanifest" />
+
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
 
         <meta property="og:title" content="{{.Title}}" />
         <meta property="og:type" content="article" />
         <meta property="og:image" content="{{.OGImageURL}}" />
+        <meta property="og:site_name" content="RVA.Events" />
         <meta property="og:description" content="{{.Summary}}" />
         <meta name="description" content="{{.Summary}}" />
 
@@ -26,6 +30,19 @@
             <div id="links">
                 <a href="/tags/tech" class="{{ if contains .Tags "Tech" }}active{{end}}">TECH</a>
             </div>
+
+            <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScnScuyvW4yhTH0gDcfbFqmHrcdQasB_Q6Wn0YvU7yqcVV0yg/viewform"
+            >
+                <div id="contribute" class="hidden">
+                    <p id="title">Are you an event organizer?</p>
+                    <p>
+                        Please consider adding your event to RVA.Events. It's
+                        totally free, and I tried to make it simple. Click here
+                        to submit.
+                    </p>
+                </div>
+            </a>
         </nav>
         <main>
             {{ if contains .Tags "Tech" }}

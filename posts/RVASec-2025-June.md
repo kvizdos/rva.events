@@ -20,7 +20,9 @@ RVAsec Monthly is Richmond's unparalleled networking event for security professi
 
 ## WHEN TO GO
 
-Wednesday, June 18, 2025 from 5:00 PM to 8:00 PM EDT
+Wednesday, June 18, 2025
+
+5:00 PM to 8:00 PM
 
 ## WHERE TO GO
 

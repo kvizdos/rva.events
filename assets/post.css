@@ -5,6 +5,8 @@ main a {
 }
 
 main h1 {
+    text-wrap: wrap;
+    overflow-wrap: break-word;
     font-size: 2rem;
     font-weight: 600;
     color: var(--black);
@@ -20,14 +22,19 @@ main h2 {
     margin-bottom: 0.5rem;
 }
 
-main p {
+main p,
+main ul li {
     font-family: "Atkinson Hyperlegible", sans-serif;
     font-weight: 200;
     font-size: 1.25rem;
     max-width: 65ch;
     font-variant-numeric: tabular-nums;
+    margin: 0.85rem 0;
 }
 
+main ul li {
+    margin: 0.25rem 0;
+}
 main strong {
     font-weight: 600;
 }

@@ -4,9 +4,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link rel="stylesheet" href="/assets/style.css" />
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+        <link rel="manifest" href="/manifest.webmanifest" />
 
-        <title>EasyBlog Quick Start</title>
-        <meta name="description" content="REPLACE ME!!!" />
+        <title>{{.Tag}} - RVA.Events</title>
+        <meta name="description" content="Find {{.Tag}} events happening now in Richmond, VA" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,6 +23,19 @@
             <div id="links">
                 <a href="/tags/tech" class="{{ if eq .Tag "Tech" }}active{{end}}">TECH</a>
             </div>
+
+            <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScnScuyvW4yhTH0gDcfbFqmHrcdQasB_Q6Wn0YvU7yqcVV0yg/viewform"
+            >
+                <div id="contribute">
+                    <p id="title">Are you an event organizer?</p>
+                    <p>
+                        Please consider adding your event to RVA.Events. It's
+                        totally free, and I tried to make it simple. Click here
+                        to submit.
+                    </p>
+                </div>
+            </a>
         </nav>
         <main>
             <div id="header">

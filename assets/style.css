@@ -33,9 +33,17 @@ a {
     cursor: pointer;
 }
 
+main {
+    max-width: calc(100svw - 4rem);
+}
+
 nav a.active {
     width: fit-content;
     border-bottom: 5px solid var(--accent);
+}
+
+nav a:last-of-type.active {
+    margin-bottom: 0;
 }
 
 body {
@@ -96,7 +104,7 @@ article #info #date {
 }
 
 article #title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #2e4a62;
     font-weight: 600;
     font-family: "Rubik Mono One", monospace;
@@ -126,7 +134,56 @@ article #summary {
     font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
+#contribute.hidden {
+    display: none;
+}
+
+#contribute {
+    margin-top: 2rem;
+}
+
+#contribute:hover p#title::after {
+    width: 100%;
+    transition: 200ms;
+}
+#contribute p#title::after {
+    background-color: var(--accent);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: 200ms;
+    content: " ";
+    width: 0;
+    height: 2px;
+    background-color: red;
+}
+
+#contribute p#title {
+    margin-bottom: 4px;
+
+    position: relative;
+    width: fit-content;
+    transition: 200ms;
+
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--primary);
+    font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+#contribute p {
+    color: #4f3e29;
+    max-width: 28ch;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
 @media screen and (min-width: 1200px) {
+    nav a:last-of-type.active {
+        margin-bottom: 2rem;
+    }
+    #contribute.hidden {
+        display: inherit;
+    }
     body {
         padding: 6rem;
 
@@ -151,5 +208,8 @@ article #summary {
 
     main {
         grid-column: span 6;
+    }
+    #contribute {
+        margin-top: 0;
     }
 }
