@@ -1,0 +1,155 @@
+/* Good for basic layouts & styles */
+.atkinson-hyperlegible-regular {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.atkinson-hyperlegible-bold {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.atkinson-hyperlegible-regular-italic {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.atkinson-hyperlegible-bold-italic {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+nav a.active {
+    width: fit-content;
+    border-bottom: 5px solid var(--accent);
+}
+
+body {
+    background-color: #f4efe5;
+
+    --primary: #2e4a62;
+    --black: #0a2338;
+    --accent: #b22222;
+}
+
+body {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+nav {
+    margin-bottom: 2rem;
+}
+
+nav #links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav > h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--primary);
+    font-family: "Rubik Mono One", monospace;
+}
+
+nav #links > a {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--accent);
+    font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+article {
+    border-left: 5px solid #2e4a62;
+    background-color: #f8f4ee;
+    width: 100%;
+    padding: 1rem;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+article #info {
+    font-family: "Antonio", sans-serif;
+    font-size: 1.25rem;
+}
+
+article #info #date {
+    font-weight: 200;
+    color: #4f3e29;
+}
+
+article #title {
+    font-size: 2rem;
+    color: #2e4a62;
+    font-weight: 600;
+    font-family: "Rubik Mono One", monospace;
+    margin: 0.25rem 0rem;
+}
+
+article #location {
+    font-family: "Antonio", sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+article #summary {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    color: #4f3e29;
+}
+
+#header {
+    margin-bottom: 1.25rem;
+}
+
+#header h2 {
+    font-size: 1.75rem;
+    color: var(--black);
+    font-family: "Rubik Mono One", monospace;
+}
+#header p {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        padding: 6rem;
+
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    nav {
+        grid-column: span 2;
+        position: sticky;
+        top: 4rem;
+        height: fit-content;
+    }
+
+    nav #links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav #links > a {
+        font-size: 5rem;
+    }
+
+    main {
+        grid-column: span 6;
+    }
+}

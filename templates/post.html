@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="/assets/style.css" />
+        <link rel="stylesheet" href="/assets/post.css" />
+
+        <meta property="og:title" content="{{.Title}}" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="{{.OGImageURL}}" />
+        <meta property="og:description" content="{{.Summary}}" />
+        <meta name="description" content="{{.Summary}}" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Mono+One&display=swap"
+            rel="stylesheet"
+        />
+        <title>{{.Title}} - My Awesome Blog</title>
+    </head>
+    <body>
+        <nav>
+            <h1><a href="/">RVA Events</a></h1>
+            <div id="links">
+                <a href="/tags/art" class="{{ if contains .Tags "Art" }}active{{end}}">ART</a>
+                <a href="/tags/music" class="{{ if contains .Tags "Music" }}active{{end}}">MUSIC</a>
+                <a href="/tags/tech" class="{{ if contains .Tags "Tech" }}active{{end}}">TECH</a>
+            </div>
+        </nav>
+        <main>
+            {{ if contains .Tags "Art" }}
+              <a href="/tags/art">See All Art Events</a>
+            {{ else if contains .Tags "Music" }}
+              <a href="/tags/music">See All Music Events</a>
+            {{ else if contains .Tags "Tech" }}
+              <a href="/tags/tech">See All Tech Events</a>
+            {{ end }}
+
+            <h1>{{.Title}}</h1>
+
+            {{.Body}}
+
+            <button>Count me in!</button>
+            <p class="disclaimer">Opens external RSVP on Meetup.com</p>
+        </main>
+    </body>
+</html>
