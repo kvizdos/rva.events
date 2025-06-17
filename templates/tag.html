@@ -29,20 +29,22 @@
                 <h2>Upcoming {{.Tag}} Events in Richmond</h2>
             </div>
 
-            {{ range .Posts }}
+            {{ range GetSoonEvents .Posts }}
             <a href="{{ .Slug }}">
                 <article>
                     <div id="info">
-                        <span id="relative">SOON</span>
-                        <span id="date">06/17/2025</span>
+                        <span id="relative"
+                            >{{ GetRelativeDate .RawMetadata }} @ {{ GetTime
+                            .RawMetadata }}</span
+                        >
+                        <span id="date">{{ GetDate .RawMetadata }}</span>
                     </div>
                     <p id="title">{{ .Title }}</p>
                     <p id="location">
-                        COMING SOON
+                        {{ GetPrice .RawMetadata }} @ {{ GetLocation
+                        .RawMetadata }}
                     </p>
-                    <p id="summary">
-                        {{ .Summary }}
-                    </p>
+                    <p id="summary">{{ .Summary }}</p>
                 </article>
             </a>
             {{ end }}

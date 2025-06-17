@@ -61,15 +61,21 @@
                     "tech" to filter events.
                 </p>
             </div>
-            {{ range . }}
+            {{ range GetSoonEvents . }}
             <a href="{{ .Slug }}">
                 <article>
                     <div id="info">
-                        <span id="relative">SOON</span>
-                        <span id="date">06/17/2025</span>
+                        <span id="relative"
+                            >{{ GetRelativeDate .RawMetadata }} @ {{ GetTime
+                            .RawMetadata }}</span
+                        >
+                        <span id="date">{{ GetDate .RawMetadata }}</span>
                     </div>
                     <p id="title">{{ .Title }}</p>
-                    <p id="location">COMING SOON</p>
+                    <p id="location">
+                        {{ GetPrice .RawMetadata }} @ {{ GetLocation
+                        .RawMetadata }}
+                    </p>
                     <p id="summary">{{ .Summary }}</p>
                 </article>
             </a>

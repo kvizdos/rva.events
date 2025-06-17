@@ -4,6 +4,8 @@ on:
   push:
     branches: ["main"]
   workflow_dispatch:
+  schedule:
+    - cron: "1 5 * * *"
 
 permissions:
   contents: read
@@ -29,11 +31,11 @@ jobs:
         with:
           go-version: "1.24"
 
-      - name: Install EasyBlog
-        run: go install github.com/kvizdos/easyblog@latest
+      - name: Build easyblog binary
+        run: go build -o easyblog .
 
       - name: Build site with EasyBlog
-        run: easyblog
+        run: ./easyblog
 
       - name: Deploy
         uses: cloudflare/wrangler-action@v3

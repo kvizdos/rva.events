@@ -42,8 +42,10 @@
 
             {{.Body}}
 
-            <button>Count me in!</button>
-            <p class="disclaimer">Opens external RSVP on Meetup.com</p>
+            {{ if .RawMetadata.RSVP }}
+                <a href="{{.RawMetadata.RSVP}}" target="_blank"><button>Count me in!</button></a>
+                <p class="disclaimer">Opens external RSVP on {{ GetExternalURL .RawMetadata.RSVP }}</p>
+            {{ end }}
         </main>
     </body>
 </html>
