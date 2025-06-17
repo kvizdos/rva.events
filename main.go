@@ -12,7 +12,8 @@ import (
 )
 
 func rangeEvents(posts builder.PostList) builder.PostList {
-	slices.Reverse(posts)
+	p := slices.Clone(posts)
+	slices.Reverse(p)
 
 	now := time.Now().UTC().Truncate(24 * time.Hour)
 
@@ -33,7 +34,8 @@ func rangeEvents(posts builder.PostList) builder.PostList {
 }
 
 func getSoonEvents(posts builder.PostList) builder.PostList {
-	slices.Reverse(posts)
+	p := slices.Clone(posts)
+	slices.Reverse(p)
 
 	now := time.Now().UTC().Truncate(24 * time.Hour)
 	weekFromNow := now.AddDate(0, 0, 7)
