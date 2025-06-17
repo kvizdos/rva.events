@@ -44,7 +44,7 @@
                 <h2>Upcoming {{.Tag}} Events in Richmond</h2>
             </div>
 
-            {{ range GetSoonEvents .Posts }}
+            {{ range RangeEvents .Posts }}
             <a href="{{ .Slug }}">
                 <article>
                     <div id="info">
