@@ -7,7 +7,7 @@ Author: rvasec
 Group: RVASEC
 Tags: Tech, Free, Cyber Security, Networking
 Price: FREE
-Location: Somewhere in Short Pump
+Location: Casa del Barco Short Pump
 RSVP: https://www.meetup.com/rvasec/events/305126457?action=rsvp
 ---
 
@@ -27,4 +27,6 @@ Wednesday, June 18, 2025
 
 ## WHERE TO GO
 
-Location TBD! Check back a day or two before the event.
+Casa del Barco Short Pump
+
+11800 WEST BROAD ST. SUITE 2516, Richmond , VA
