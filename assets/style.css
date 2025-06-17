@@ -193,6 +193,7 @@ footer p {
 footer a {
     color: var(--accent);
     text-decoration: underline;
+    text-wrap: nowrap;
 }
 
 footer a:not(:first-of-type) {
@@ -210,6 +211,10 @@ footer a:not(:first-of-type) {
         padding: 6rem;
 
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    footer {
+        grid-column: span 6;
     }
 
     nav {
