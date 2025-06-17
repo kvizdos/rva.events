@@ -19,9 +19,9 @@
         <nav>
             <h1><a href="/">RVA Events</a></h1>
             <div id="links">
-                <a href="/tags/art">ART</a>
-                <a href="/tags/music">MUSIC</a>
-                <a href="/tags/tech" class="active">TECH</a>
+                <a href="/tags/art" class="{{ if eq .Tag "Art" }}active{{end}}">ART</a>
+                <a href="/tags/music" class="{{ if eq .Tag "Music" }}active{{end}}">MUSIC</a>
+                <a href="/tags/tech" class="{{ if eq .Tag "Tech" }}active{{end}}">TECH</a>
             </div>
         </nav>
         <main>
@@ -38,14 +38,10 @@
                     </div>
                     <p id="title">{{ .Title }}</p>
                     <p id="location">
-                        FREE @ Dominion Energy Center — Downtown RVA
+                        COMING SOON
                     </p>
                     <p id="summary">
-                        RVAsec Monthly is Richmond's unparalleled networking
-                        event for security professionals and anyone looking to
-                        break into the industry. Come by our relaxed meetings
-                        and socialize with others in the industry and have a
-                        beverage.
+                        {{ .Summary }}
                     </p>
                 </article>
             </a>
