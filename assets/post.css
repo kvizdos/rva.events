@@ -58,6 +58,19 @@ main .disclaimer {
     display: none;
 }
 
+#share {
+    margin-top: 1rem;
+}
+#share p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+#share a:not(:first-of-type) {
+    margin-left: 1rem;
+}
+
 @media screen and (min-width: 1200px) {
     main h1 {
         font-size: 2.5rem;

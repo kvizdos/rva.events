@@ -12,7 +12,7 @@ RSVP: https://www.meetup.com/rvasec/events/305126457
 
 ## WHY GO
 
-RVAsec Monthly is Richmond's unparalleled networking event for security professionals and anyone looking to break into the industry. Come by our relaxed meetings and socialize with others in the industry and have a beverage.
+RVAsec Monthly is Richmond's unparalleled networking event for security professionals and anyone looking to break into the industry. Come by our relaxed meetings and socialize with others in the industry and have a beverage.
 
 **This event is not sponsored. Food and beverage is on your own**
 

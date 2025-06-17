@@ -59,6 +59,9 @@ func main() {
 		CustomFuncs: template.FuncMap{
 			"RangeEvents":   rangeEvents,
 			"GetSoonEvents": getSoonEvents,
+			"GetEventURL": func(post builder.Post) string {
+				return fmt.Sprintf("https://rva.events/post/%s", post.OGName)
+			},
 			"GetExternalURL": func(rawURL string) string {
 				url, err := url.Parse(rawURL)
 

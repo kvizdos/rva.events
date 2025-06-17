@@ -18,23 +18,17 @@
             href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Rubik+Mono+One&display=swap"
             rel="stylesheet"
         />
-        <title>{{.Title}} - My Awesome Blog</title>
+        <title>{{.Title}} - RVA.Events</title>
     </head>
     <body>
         <nav>
             <h1><a href="/">RVA Events</a></h1>
             <div id="links">
-                <a href="/tags/art" class="{{ if contains .Tags "Art" }}active{{end}}">ART</a>
-                <a href="/tags/music" class="{{ if contains .Tags "Music" }}active{{end}}">MUSIC</a>
                 <a href="/tags/tech" class="{{ if contains .Tags "Tech" }}active{{end}}">TECH</a>
             </div>
         </nav>
         <main>
-            {{ if contains .Tags "Art" }}
-              <a href="/tags/art">See All Art Events</a>
-            {{ else if contains .Tags "Music" }}
-              <a href="/tags/music">See All Music Events</a>
-            {{ else if contains .Tags "Tech" }}
+            {{ if contains .Tags "Tech" }}
               <a href="/tags/tech">See All Tech Events</a>
             {{ end }}
 
@@ -45,6 +39,12 @@
             {{ if .RawMetadata.RSVP }}
                 <a href="{{.RawMetadata.RSVP}}" target="_blank"><button>Count me in!</button></a>
                 <p class="disclaimer">Opens external RSVP on {{ GetExternalURL .RawMetadata.RSVP }}</p>
+
+                <div id="share">
+                    <p>Share this Event</p>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ GetEventURL . }}" target="_blank">LinkedIn</a>
+                    <a href="https://bsky.app/intent/compose?text={{ GetEventURL . }}" target="_blank">Bluesky</a>
+                </div>
             {{ end }}
         </main>
     </body>
