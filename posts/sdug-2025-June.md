@@ -3,7 +3,8 @@ Title: Stay Ahead with Java's Latest Features
 Date: 06/19/2025
 Time: 5:30 PM to 7:30 PM EDT
 Summary: "Java's evolution is remarkable, and the leap from JDK 17 to today brings a wealth of powerful features to elevate your projects. Join us for an exciting session to explore select JEPs (Java Enhancement Proposals), diving into their use cases and practical benefits for your work or open-source initiatives."
-Author: rvasdug
+Author: sdug
+Group: Software Development User Group
 Tags: Tech, Free
 Price: FREE
 Location: VACO Technology

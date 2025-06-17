@@ -3,7 +3,8 @@ Title: Build robust, repeatable, and understandable data science pipelines with 
 Date: 06/17/2025
 Time: 5:45 PM to 7:45 PM
 Summary: "Join us as we will talk through Kedro's approach to building pipelines, and will explore ways in which Kedro can be useful across a variety of data-science-related tasks."
-Author: pyrva
+Author: py
+Group: Python User Group
 Tags: Tech, Free
 Price: FREE
 Location: Ippon Technologies

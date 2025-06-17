@@ -3,7 +3,8 @@ Title: RVA Code & Coffee
 Date: 06/21/2025
 Time: 9:30 AM to 12:00 PM
 Summary: "RVA Code and Coffee is an inclusive, informal co-working session. People of all skill levels attend, and we love it that way. Many people (optionally) bring projects to work on, and many other people (optionally) socialize the entire time. It's up to you! Some ideas for personal projects: build an app, write a blog, or go through programming exercises."
-Author: rvacodecoffee
+Author: codecoffee
+Group: Code & Coffee
 Tags: Tech, Free
 Price: FREE
 Location: Capital One Cafe (Short Pump)

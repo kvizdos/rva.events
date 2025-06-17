@@ -51,7 +51,7 @@
 
             <h1>{{.Title}}</h1>
 
-            <p>Hosted by {{.Author}}</p>
+            <p>Hosted by {{ GetGroup .RawMetadata }}</p>
 
             {{.Body}}
 

@@ -3,7 +3,8 @@ Title: Scanning and Enumeration in Cyber Security
 Date: 07/12/2025
 Time: 9:30 AM to 12:30 PM
 Summary: "Come and learn about Scanning and Enumeration in Cyber Security."
-Author: rva-cybersecurity
+Author: cybersecurity
+Group: Cyber Security User Group
 Tags: Tech, Free, Networking
 Price: FREE
 Location: Tech For Troops

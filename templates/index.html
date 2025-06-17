@@ -87,6 +87,7 @@
                     <p id="title">{{ .Title }}</p>
                     <p id="location">
                         {{ GetPrice .RawMetadata }} @ {{ GetLocation
+                        .RawMetadata }} &bull; Hosted by {{ GetGroup
                         .RawMetadata }}
                     </p>
                     <p id="summary">{{ .Summary }}</p>

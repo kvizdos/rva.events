@@ -77,6 +77,12 @@ func main() {
 				}
 				return "Unknown"
 			},
+			"GetGroup": func(metadata map[string]any) string {
+				if group, ok := metadata["Group"].(string); ok {
+					return group
+				}
+				return "Unknown"
+			},
 			"GetLocation": func(metadata map[string]any) string {
 				if location, ok := metadata["Location"].(string); ok {
 					return location
