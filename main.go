@@ -18,7 +18,7 @@ func rangeEvents(posts builder.PostList) builder.PostList {
 	now := time.Now().UTC().Truncate(24 * time.Hour)
 
 	out := builder.PostList{}
-	for _, post := range posts {
+	for _, post := range p {
 		date, err := time.Parse("01/02/2006", post.Date)
 		if err != nil {
 			panic(err)
@@ -41,7 +41,7 @@ func getSoonEvents(posts builder.PostList) builder.PostList {
 	weekFromNow := now.AddDate(0, 0, 7)
 
 	out := builder.PostList{}
-	for _, post := range posts {
+	for _, post := range p {
 		date, err := time.Parse("01/02/2006", post.Date)
 		if err != nil {
 			panic(err)
