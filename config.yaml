@@ -1,5 +1,5 @@
 InputDirectory: .
-BaseURL: https://dev.kv.codes
+BaseURL: https://rva.events
 CodeStyle: "dracula" # Read about available themes here: https://github.com/alecthomas/chroma/tree/master/styles
 OGImageConfig:
   IconPath: "./assets/favicon.png"
