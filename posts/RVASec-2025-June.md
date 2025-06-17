@@ -3,7 +3,7 @@ Title: RVAsec Monthly Meeting - June
 Date: 06/18/2025
 Time: 5:00 PM - 8:00 PM
 Summary: "RVAsec Monthly is Richmond's unparalleled networking event for security professionals and anyone looking to break into the industry. Come by our relaxed meetings and socialize with others in the industry and have a beverage."
-Author: Kenton Vizdos
+Author: rvasec
 Tags: Tech, Free, Cyber Security, Networking
 Price: FREE
 Location: Somewhere in Short Pump
