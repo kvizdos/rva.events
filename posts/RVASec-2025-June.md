@@ -30,3 +30,5 @@ Wednesday, June 18, 2025
 Casa del Barco Short Pump
 
 11800 WEST BROAD ST. SUITE 2516, Richmond , VA
+
+(They should be able to point you to the bar downstairs if you mention you are there for RVAsec!)
