@@ -2,7 +2,7 @@ InputDirectory: .
 BaseURL: https://dev.kv.codes
 CodeStyle: "dracula" # Read about available themes here: https://github.com/alecthomas/chroma/tree/master/styles
 OGImageConfig:
-  IconPath: "./og/icon.png"
+  IconPath: "./assets/favicon.png"
   FontPath: "./og/regular.ttf"
   FontSize: 92
 StaticConfig:

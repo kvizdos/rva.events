@@ -11,7 +11,8 @@
 
         <meta property="og:title" content="{{.Title}} - {{ GetGroup .RawMetadata }}" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="/assets/og-image.png" />
+        <meta property="og:image" content="{{.OGImageURL}}" />
+        <meta property="og:image:secure_url" content="{{.OGImageURL}}" />
         <meta property="og:site_name" content="RVA.Events" />
         <meta property="og:description" content="Join {{ GetGroup .RawMetadata }} on {{.Date}} for {{.Title}}: {{.Summary}}" />
         <meta name="description" content="Join {{ GetGroup .RawMetadata }} on {{.Date}} for {{.Title}}: {{.Summary}}" />
