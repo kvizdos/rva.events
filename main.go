@@ -17,7 +17,13 @@ func rangeEvents(posts builder.PostList) builder.PostList {
 	p := slices.Clone(posts)
 	slices.Reverse(p)
 
-	now := time.Now().UTC().Truncate(24 * time.Hour)
+	loc, err := time.LoadLocation("America/New_York")
+	if err != nil {
+		panic(err)
+	}
+
+	now := time.Now().In(loc).Truncate(24 * time.Hour)
+	now = time.Date(now.Year(), now.Month(), now.Day(), 0, 0, 0, 0, time.UTC)
 
 	out := builder.PostList{}
 	for _, post := range p {
@@ -25,6 +31,7 @@ func rangeEvents(posts builder.PostList) builder.PostList {
 		if err != nil {
 			panic(err)
 		}
+		date = time.Date(date.Year(), date.Month(), date.Day(), 0, 0, 0, 0, time.UTC)
 
 		if date.Before(now) {
 			continue
@@ -39,7 +46,13 @@ func getSoonEvents(posts builder.PostList) builder.PostList {
 	p := slices.Clone(posts)
 	slices.Reverse(p)
 
-	now := time.Now().UTC().Truncate(24 * time.Hour)
+	loc, err := time.LoadLocation("America/New_York")
+	if err != nil {
+		panic(err)
+	}
+
+	now := time.Now().In(loc).Truncate(24 * time.Hour)
+	now = time.Date(now.Year(), now.Month(), now.Day(), 0, 0, 0, 0, time.UTC)
 	weekFromNow := now.AddDate(0, 0, 7)
 
 	out := builder.PostList{}
@@ -48,6 +61,7 @@ func getSoonEvents(posts builder.PostList) builder.PostList {
 		if err != nil {
 			panic(err)
 		}
+		date = date.In(loc)
 
 		if date.Before(now) || date.After(weekFromNow) {
 			continue
@@ -190,17 +204,22 @@ func main() {
 			},
 			"GetRelativeDate": func(metadata map[string]any) string {
 				if rawDate, ok := metadata["Date"].(string); ok {
-					d, err := time.Parse("01/02/2006", rawDate)
+					layout := "01/02/2006"
+					d, err := time.Parse(layout, rawDate)
 					if err != nil {
 						panic(err)
 					}
 
-					today := time.Now().Truncate(24 * time.Hour)
-					diff := d.Sub(today).Hours() / 24
-					days := int(diff)
+					today := time.Now()
+					d = time.Date(d.Year(), d.Month(), d.Day(), 0, 0, 0, 0, time.UTC)
+					today = time.Date(today.Year(), today.Month(), today.Day(), 0, 0, 0, 0, time.UTC)
+
+					days := int(d.Sub(today).Hours() / 24)
 
 					switch {
 					case days == 0:
+						fmt.Println(rawDate, today, d)
+
 						return "TODAY"
 					case days == 1:
 						return "TOMORROW"
