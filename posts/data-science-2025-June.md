@@ -19,7 +19,7 @@ The flexibility and power of generative AI has yielded new classes of security r
 
 Thursday, June 19, 2025
 
-6:00 PM to 8:00 PM EDT
+6:00 PM to 8:00 PM
 
 ## WHERE TO GO
 

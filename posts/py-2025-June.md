@@ -46,7 +46,7 @@ Want to present? [https://forms.gle/q8w3xziArWjud5f67](https://forms.gle/q8w3xzi
 
 Tuesday, June 17, 2025
 
-5:45 PM to 7:45 PM EDT
+5:45 PM to 7:45 PM
 
 Every 3rd Tuesday of the month
 

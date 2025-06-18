@@ -19,7 +19,7 @@ We will take a dive into my background and how I arrived where I am now over the
 
 Wednesday, June 25, 2025
 
-5:30 PM to 7:30 PM EDT
+5:30 PM to 7:30 PM
 
 ## WHERE TO GO
 

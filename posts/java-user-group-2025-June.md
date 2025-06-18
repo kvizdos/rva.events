@@ -1,7 +1,7 @@
 ---
 Title: Validating Java with Policy as Code (PaC)
 Date: 06/24/2025
-Time: 5:30 PM to 7:30 PM EDT
+Time: 5:30 PM to 7:30 PM
 Summary: "This talk will introduce Policy as Code (PaC), and how it is used to validate Java code and Java project artifacts. Jimmy will discuss solutions used to parse Java project artifacts (including code), and then use PaC solutions to validate the artifacts. Using PaC with Java projects extends the reach of automated Governance, Risk, and Compliance (GRC) for Java projects, beyond the out-of-the-box features of your typical Open Source Software (OSS) and Commercial off the shelf (COTS) solutions."
 Author: java
 Group: Java User Group
@@ -21,7 +21,7 @@ This talk will introduce PaC, and how it is used to validate Java code and Java 
 
 Tuesday, June 24, 2025
 
-5:30 PM to 7:30 PM EDT
+5:30 PM to 7:30 PM
 
 ## WHERE TO GO
 
