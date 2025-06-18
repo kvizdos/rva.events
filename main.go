@@ -210,7 +210,12 @@ func main() {
 						panic(err)
 					}
 
-					today := time.Now()
+					loc, err := time.LoadLocation("America/New_York")
+					if err != nil {
+						panic(err)
+					}
+
+					today := time.Now().In(loc)
 					d = time.Date(d.Year(), d.Month(), d.Day(), 0, 0, 0, 0, time.UTC)
 					today = time.Date(today.Year(), today.Month(), today.Day(), 0, 0, 0, 0, time.UTC)
 
@@ -218,8 +223,6 @@ func main() {
 
 					switch {
 					case days == 0:
-						fmt.Println(rawDate, today, d)
-
 						return "TODAY"
 					case days == 1:
 						return "TOMORROW"
