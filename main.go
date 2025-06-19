@@ -22,16 +22,17 @@ func rangeEvents(posts builder.PostList) builder.PostList {
 		panic(err)
 	}
 
-	now := time.Now().In(loc).Truncate(24 * time.Hour)
-	now = time.Date(now.Year(), now.Month(), now.Day(), 0, 0, 0, 0, time.UTC)
+	// Midnight local time
+	now := time.Now().In(loc)
+	now = time.Date(now.Year(), now.Month(), now.Day(), 0, 0, 0, 0, loc)
 
 	out := builder.PostList{}
 	for _, post := range p {
-		date, err := time.Parse("01/02/2006", post.Date)
+		date, err := time.ParseInLocation("01/02/2006", post.Date, loc)
 		if err != nil {
 			panic(err)
 		}
-		date = time.Date(date.Year(), date.Month(), date.Day(), 0, 0, 0, 0, time.UTC)
+		date = time.Date(date.Year(), date.Month(), date.Day(), 0, 0, 0, 0, loc)
 
 		if date.Before(now) {
 			continue
@@ -51,23 +52,26 @@ func getSoonEvents(posts builder.PostList) builder.PostList {
 		panic(err)
 	}
 
-	now := time.Now().In(loc).Truncate(24 * time.Hour)
-	now = time.Date(now.Year(), now.Month(), now.Day(), 0, 0, 0, 0, time.UTC)
+	// Ensure 'now' is midnight in local time
+	now := time.Now().In(loc)
+	now = time.Date(now.Year(), now.Month(), now.Day(), 0, 0, 0, 0, loc)
+
 	weekFromNow := now.AddDate(0, 0, 7)
 
 	out := builder.PostList{}
 	for _, post := range p {
-		date, err := time.Parse("01/02/2006", post.Date)
+		date, err := time.ParseInLocation("01/02/2006", post.Date, loc)
 		if err != nil {
 			panic(err)
 		}
-		date = date.In(loc)
 
-		if date.Before(now) || date.After(weekFromNow) {
-			continue
+		// Ensure date is also midnight in local time
+		date = time.Date(date.Year(), date.Month(), date.Day(), 0, 0, 0, 0, loc)
+
+		// Keep only events today through 7 days out
+		if !date.Before(now) && !date.After(weekFromNow) {
+			out = append(out, post)
 		}
-
-		out = append(out, post)
 	}
 	return out
 }
