@@ -36,6 +36,25 @@
             #header {
                 margin: 2rem 0;
             }
+
+            button#newsletter {
+                border: 0;
+
+                border-left: 5px solid var(--accent);
+                background-color: #f8f4ee;
+                width: 100%;
+                padding: 1rem;
+                cursor: pointer;
+
+                font-size: 1rem;
+                text-align: left;
+                font-family: "Atkinson Hyperlegible", sans-serif;
+            }
+
+            button#newsletter p:not(#thatsit) {
+                font-size: 1.25rem;
+                margin-top: 0.25rem;
+            }
         </style>
         <script>
             !(function (t, e) {
@@ -164,6 +183,19 @@
                 </article>
             </a>
             {{ end }}
+
+            <a href="https://thisweek.rva.events?utm_source=homepage">
+                <button id="newsletter">
+                    <p id="thatsit">That's it for the next 7 days.</p>
+                    <p>
+                        If you want, sign up for the newsletter! Just click
+                        anywhere on this box. I'll email you Fridays at 5 PM
+                        about some cool events coming up in the next week (AKA:
+                        free weekend plans (maybe (if you're interested (in
+                        attending (and I have weekend events))))).
+                    </p>
+                </button></a
+            >
         </main>
 
         <footer>

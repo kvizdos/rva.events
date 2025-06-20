@@ -40,10 +40,12 @@
                 <a href="/tags/tech" class="{{ if contains .Tags "Tech" }}active{{end}}">TECH</a>
             </div>
 
+
+            <div class="desktop">
             <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLScnScuyvW4yhTH0gDcfbFqmHrcdQasB_Q6Wn0YvU7yqcVV0yg/viewform"
             >
-                <div id="contribute" class="hidden">
+                <div id="contribute">
                     <p id="title">Are you an event organizer?</p>
                     <p>
                         Please consider adding your event to RVA.Events. It's
@@ -52,6 +54,10 @@
                     </p>
                 </div>
             </a>
+            <a href="https://thisweek.rva.events?utm_source=event_page">
+                <p id="newsletter">Sign up for This Week emails</p>
+            </a>
+            </div>
         </nav>
         <main>
             {{ if contains .Tags "Tech" }}
@@ -75,6 +81,24 @@
                 </div>
             {{ end }}
 
+
+            <div class="mobile">
+            <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScnScuyvW4yhTH0gDcfbFqmHrcdQasB_Q6Wn0YvU7yqcVV0yg/viewform"
+            >
+                <div id="contribute">
+                    <p id="title">Are you an event organizer?</p>
+                    <p>
+                        Please consider adding your event to RVA.Events. It's
+                        totally free, and I tried to make it simple. Tap here
+                        to submit.
+                    </p>
+                </div>
+            </a>
+            <a href="https://thisweek.rva.events?utm_source=event_page">
+                <p id="newsletter">Sign up for This Week emails</p>
+            </a>
+            </div>
         </main>
         <footer>
             <p>Helpful Links</p>

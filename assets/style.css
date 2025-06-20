@@ -172,8 +172,22 @@ article #summary {
 
 #contribute p {
     color: #4f3e29;
-    max-width: 28ch;
     font-family: "Atkinson Hyperlegible", sans-serif;
+}
+
+a p#newsletter {
+    margin-top: 1rem;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    background-color: var(--accent);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.desktop {
+    display: none;
 }
 
 footer {
@@ -201,6 +215,12 @@ footer a:not(:first-of-type) {
 }
 
 @media screen and (min-width: 1200px) {
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: inherit;
+    }
     nav a:last-of-type.active {
         margin-bottom: 2rem;
     }
@@ -237,7 +257,7 @@ footer a:not(:first-of-type) {
     main {
         grid-column: span 6;
     }
-    #contribute {
+    #contribute p {
         margin-top: 0;
     }
 }
