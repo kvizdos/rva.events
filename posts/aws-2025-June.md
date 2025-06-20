@@ -4,7 +4,7 @@ Date: 06/23/2025
 Time: 6:00 PM to 8:00 PM
 Summary: "Ford Prior is going to spill the tea on what's going on behind the scenes at AWS. Specifically, what tools they're using to deliver value in the field, what trends he's seeing in the AI maker-space, and whatever else he feels called to share!"
 Author: aws
-Group: Richmond AWS User Group
+Group: AWS User Group
 Tags: Tech, Free
 Price: FREE
 Location: Ippon Technologies
