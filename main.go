@@ -231,9 +231,9 @@ func main() {
 					case days == 1:
 						return "TOMORROW"
 					case days > 1 && days <= 7:
-						return fmt.Sprintf("%d DAYS", days)
+						return fmt.Sprintf("IN %d DAYS (%s)", days, d.Format("Mon"))
 					default:
-						return d.Format("Jan 2, 2006")
+						return d.Format("Monday, Jan 2, 2006")
 					}
 				}
 				return "Unknown"
